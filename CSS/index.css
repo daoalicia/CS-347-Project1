@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    background-color: white;
+}
+
+#root {
+    object-fit: contain;
+}
+
+img {
+    width: 800px;
+    height: 400px;
+}
