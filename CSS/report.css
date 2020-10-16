@@ -1,0 +1,12 @@
+body {
+    background-color: #F2E2D2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#root {
+    position: relative;
+    margin: 0;
+    top: 3em;
+    left: 0;
+    padding: 10px 100px;
+}
