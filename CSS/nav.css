@@ -1,50 +1,123 @@
-body {
+nav-body {
     margin: 0;
+    padding: 0;
+    position: fixed;
+    vertical-align: top;
+    height: 3em;
+    width: 100%;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #18828b;
+    color: #ffffff;
 }
 
 #navbar {
     padding: 10px;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #749C75;
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
 }
 
 #name-logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#site-links {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 38%;
+}
+
+#account-cart-links {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 a {
     text-decoration: none;
+    color: #ffffff;
 }
 
-#logo {
-    padding: 5px;
-}
-.navlinks {
+ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 
-.navlink > a {
+li {
+    padding: 10px;
+}
+
+.fas, #name {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+#account-user-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.fas:hover, .label {
+    cursor: pointer
+}
+
+#user, #clothes, #info {
+    position: relative;
+}
+
+#user:hover>#options, #clothes:hover>#options, #info:hover>#options {
+    display: block;
+}
+
+#options {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #18828b;
+}
+
+#options>li>a {
     display: block;
     padding: 5px;
+    border-top: 1px solid lightgray;
 }
 
-.navlink > a:hover {
-    background-color: lightgray;
+#options>li>a:hover {
+    background-color: #60afb6;
 }
 
-.fas,
-#name {
-    color: white;
-    font-size: 1.5em;
+#menu-button, #phone-menu {
+    display: none;
+}
+
+/* if we drop below 750px, then we apply the following styling */
+
+@media (max-width: 750px) {
+    #name {
+        font-size: 1em;
+    }
+    #site-links {
+        display: none;
+    }
+    #menu-button {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 38%;
+    }
+    #phone-menu, #sub-menu {
+        display: flex;
+        flex-direction: column;
+    }
+    #sub-menu>li {
+        text-align: left;
+    }
 }

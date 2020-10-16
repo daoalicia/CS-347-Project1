@@ -1,0 +1,30 @@
+body {
+    background-color: #F2E2D2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#root {
+    position: relative;
+    margin: 0;
+    top: 3em;
+    left: 0;
+    padding: 10px 100px;
+}
+
+h1 {
+    color: #18828b;
+}
+
+h2 {
+    text-decoration: underline;
+    color: #46b1c9
+}
+
+h3 {
+    color: #18828b;
+}
+
+p {
+    font-weight: bold;
+    color: #838582;
+}

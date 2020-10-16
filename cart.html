@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS/cart.css">
+    <script defer src="JS/nav.js"></script>
+    <title>Home Page</title>
+</head>
+
+<body>
+    <!-- top navigation bar -->
+    <div id="nav"></div>
+
+
+    <ul id="cart">
+        <li>Item</li>
+        <li>Name</li>
+        <li>Price</li>
+        <!-- JavaScript function could go here to append li elements of items added to cart from clothing pages. -->
+        <li><img src="images/top1.jpg"></li>
+        <li>Floral Cardigan</li>
+        <li id="price">$35</li>
+        <li><img src="images/top2.jpg"></li>
+        <li>White Wrap Top</li>
+        <li id="price">$18</li>
+        <li><img src="images/top7.jpg"></li>
+        <li>White Off-The-Shoulder Top</li>
+        <li id="price">$14</li>
+        <li id="totals">
+            <ul>
+                <li id="subtotal"></li>
+                <li id="shipping"></li>
+                <li id="tax"></li>
+                <li id="total"></li>
+                <li><button id="checkout">Checkout</button></li>
+            </ul>
+        </li>
+    </ul>
+
+    <script defer src="JS/cart.js"></script>
+
+
+</body>
+
+</html>

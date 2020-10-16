@@ -8,17 +8,110 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 
-<body>
+<nav-body>
     <nav id="navbar">
-        <a href="index.html" alt="home-page">
-            <div id="name-logo">
-                <div id="logo"><i class='fas'>&#xf553;</i></div>
-                <div id="name">Shop Name</div>
-            </div>
-        </a>
-        <ul class="navlinks">
-            <li class="navlink"><a href="#"><i class='fas'>&#xf406;</i></a></li>
-            <li class="navlink"><a href="#"><i class='fas'>&#xf07a;</i></a></li>
+        <ul id="name-logo">
+            <li>
+                <a href="index.html" alt="home-page">
+                    <div id="logo"><i class='fas'>&#xf553;</i></div>
+                </a>
+            </li>
+            <li>
+                <a href="index.html" alt="home-page">
+                    <div id="name">Sarcelle The Label</div>
+                </a>
+            </li>
+        </ul>
+
+        <ul id="phone-menu">
+            <li>
+                <div id="menu-button">
+                    <!-- hamburger icon to show only on mobile -->
+                    <svg viewBox="0 0 100 80" width="30" height="30">
+                        <rect fill="white" width="100" height="15"></rect>
+                        <rect fill="white" y="30" width="100" height="15"></rect>
+                        <rect fill="white" y="60" width="100" height="15"></rect>
+                    </svg>
+                </div>
+                <ul id="phone-options">
+                    <li>Clothing
+                        <ul id="sub-menu">
+                            <li><a href="tops.html">Tops/Tees</a></li>
+                            <li><a href="#">Sweaters</a></li>
+                            <li><a href="#">Bottoms</a></li>
+                            <li><a href="#">Dresses</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Sale</a></li>
+                    <li>Info
+                        <ul id="sub-menu">
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Shipping</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <!-- <ul id="phone-site-links">
+            <li id="clothes">
+                <div class="label">Clothing</i></div>
+                <ul id="phone-options">
+                    <li><a href="tops.html">Tops/Tees</a></li>
+                    <li><a href="#">Sweaters</a></li>
+                    <li><a href="#">Bottoms</a></li>
+                    <li><a href="#">Dresses</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Sale</a></li>
+            <li id="info">
+                <div class="label">Info</i></div>
+                <ul id="phone-options">
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Shipping</a></li>
+                </ul>
+            </li>
+        </ul> -->
+
+        <ul id="site-links">
+            <li id="clothes">
+                <div class="label">Clothing<i class="fa fa-caret-down"></i></div>
+                <ul id="options">
+                    <li><a href="tops.html">Tops/Tees</a></li>
+                    <li><a href="#">Sweaters</a></li>
+                    <li><a href="#">Bottoms</a></li>
+                    <li><a href="#">Dresses</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Sale</a></li>
+            <li id="info">
+                <div class="label">Info<i class="fa fa-caret-down"></i></div>
+                <ul id="options">
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Shipping</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul id="account-cart-links">
+            <li id="user">
+                <i class='fas'>&#xf406;</i>
+                <ul id="options">
+                    <li><a href="create.html">Create an Account</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </li>
+            <li class="navlink"><a href="cart.html"><i class='fas'>&#xf07a;</i></a></li>
         </ul>
     </nav>
-</body>
+</nav-body>
